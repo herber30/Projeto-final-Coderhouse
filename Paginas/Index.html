@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Gastos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/Style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Simulador de Gastos</h1>
+        <button id="btn-ajuda">Ajuda</button>
+    </header>
+
+    <main class="container">
+        <section class="saldo">
+            <h2>Saldo Atual</h2>
+            <p id="saldoAtual">R$ 0,00</p>
+        </section>
+
+        <section class="transacoes">
+            <h2>Transações</h2>
+
+            <table id="tabelaTransacoes">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <form id="novaTransacao">
+                <h3>Nova Transação</h3>
+
+                <div class="campos-nova-transacao">
+                    <div class="campo">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="descricao">Descrição:</label>
+                        <input type="text" id="descricao" name="descricao" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="valor">Valor:</label>
+                        <input type="number" id="valor" name="valor" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="tipo">Tipo:</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="receita">Receita</option>
+                            <option value="despesa">Despesa</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2024 Simulador de Gastos.</p>
+    </footer>
+
+    <script src="../Js/script.js"></script>
+</body>
+
+</html>
