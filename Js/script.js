@@ -14,7 +14,7 @@ function adicionarTransacao() {
     return
   }
 
-  // Cria um objeto transacao
+  // Cria um objeto de transacao
   const transacao = {
     data,
     descricao,
